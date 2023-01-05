@@ -1,6 +1,6 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-/*
 font-family: 'Poppins', sans-serif; heading
 font-family: 'Open Sans', sans-serif; body
 */
@@ -12,9 +12,18 @@ font-family: 'Open Sans', sans-serif; body
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background-image: url(./images/bg-desktop.svg);
+    min-height: 100vh;
+    background-image: url("./images/bg-desktop.svg");
+    background-position: top, left;
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: hsl(257, 40%, 49%);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 header>img{
     margin-left: 60px;
@@ -22,36 +31,39 @@ header>img{
 .page{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 150px;
 }
 .left{
-    display: block;
-    width: 100%;
-    margin-top: 120px;
+    margin-top: 55px;
     margin-left: 60px;
+}
+.left>img{
+    width: 950px;
 }
 .right
 {
     display: flex;
     flex-direction: column;
-    margin-right: 380px;
-    width: 750px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: whitesmoke;
+    width: 500px;
 }
 input{
-
     width: 150px;
     height: 50px;
     border-radius: 25px;
     margin-top: 10px;
 }
 .right>h1{
+    font-family: 'Poppins', sans-serif;
     color: whitesmoke;
     font-weight: 600;
 }
 input:hover{
     background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
 }
 .foot-list{
     display: flex;
@@ -62,6 +74,9 @@ input:hover{
 .foot-link{
     list-style-type: none;
     padding: 5px;
+}
+.foot-list>.foot-link:hover{
+    background-color: hsl(300, 69%, 71%);
 }
 .attribution{
     font-size: 11px; text-align: center;
