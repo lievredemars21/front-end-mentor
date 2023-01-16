@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+input{
+    padding: 15px;
+    border-radius: 25px;
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+.nav-link>a{
+    text-decoration: none;
+    padding: 5px;
+    color: hsl(233, 8%, 62%);
+}
+.top{
+    display: flex;
+}
+.top-right{
+    display: flex;
+    justify-content: flex-start;
+}
